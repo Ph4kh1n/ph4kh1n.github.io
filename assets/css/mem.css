@@ -1,5 +1,21 @@
 :root {
     --overlay: #FFCC86;
+
+    --fs-1: 32px;
+    --fs-2: 20px;
+    --fs-3: 19px;
+    --fs-4: 18px;
+    --fs-5: 16px;
+    --fs-6: 15px;
+    --fs-7: 14px;
+    --fs-8: 13px;
+    --fs-9: 12px;
+    --fs-10: 11px;
+
+    --fw-500: 500;
+    --fw-700: 700;
+
+    --transition: 0.15s ease-in-out;
 }
 
 /*-----------------------------------*\
@@ -63,7 +79,7 @@ body {
   ::-webkit-scrollbar-button { height: 5px; }
   */
 
-.showcase {
+  .showcase {
     position: absolute;
     right: 0;
     width: 100%;
@@ -94,6 +110,18 @@ body {
     justify-content: space-between;
 }
 
+.members {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    z-index: 2000;
+    color: #fff;
+}
+
 .logo {
     font-size: 25px;
     text-transform: uppercase;
@@ -118,81 +146,6 @@ body {
     background-position: center;
     left: 300px;
     filter: invert(1);
-}
-
-.showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-}
-
-.btn-primary {
-    background: #FFD071;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #000;
-    color: #000;
-    transition: 0.25s;
-}
-
-.btn-primary:hover {
-    background: rgba(0, 0, 0, 0.1);
-    color: #fff;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--overlay);
-    mix-blend-mode: overlay;
-}
-
-.text {
-    position: relative;
-    z-index: 10;
-}
-
-.text h3 {
-    font-size: 4em;
-    font-weight: 700;
-    line-height: 1em;
-    text-transform: uppercase;
-}
-
-.text p {
-    font-size: 1.1em;
-    margin: 20px 0;
-    font-weight: 400;
-    max-width: 700px;
-}
-
-.social {
-    position: absolute;
-    bottom: 20px;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social li a {
-    display: inline-block;
-    filter: invert(1);
-    margin-right: 20px;
-    transform: scale(0.5);
-    transition: 0.5s;
-
-}
-
-.social li a:hover {
-    transform: scale(0.5) translateY(-15px);
 }
 
 .menu {
