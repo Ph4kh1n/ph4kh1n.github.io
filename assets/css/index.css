@@ -131,7 +131,7 @@ body {
 }
 
 .btn-primary {
-    background: #FFD071;
+    background: #47A0DC;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #000;
@@ -140,7 +140,7 @@ body {
 }
 
 .btn-primary:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
     color: #fff;
 }
 
