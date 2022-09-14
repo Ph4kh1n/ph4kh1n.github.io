@@ -100,8 +100,8 @@ body {
     text-transform: uppercase;
     cursor: pointer;
 
-    background: linear-gradient(-80deg, #fff, #fff, #ff5cab, #ff5cab);
-    background: -webkit-linear-gradient(-80deg, #fff, #fff, #ff5cab, #ff5cab);
+    background: linear-gradient(-80deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
+    background: -webkit-linear-gradient(-80deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -197,8 +197,8 @@ body {
     font-weight: 400;
     max-width: 700px;
 
-    background: linear-gradient(-80deg, #fff, #fff, #ff5cab, #ff5cab);
-    background: -webkit-linear-gradient(-80deg, #fff, #fff, #ff5cab, #ff5cab);
+    background: linear-gradient(-80deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
+    background: -webkit-linear-gradient(-80deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -254,7 +254,18 @@ body {
 }
 
 .menu ul li a:hover {
-    color: var(--overlay);
+    background: linear-gradient(180deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
+    background: -webkit-linear-gradient(180deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300% !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 1.5s ease-in-out infinite;
+    -moz-animation: animated_text 1.5s ease-in-out infinite;
+    -webkit-animation: animated_text 1.5s ease-in-out infinite;
+
     transform: scale(1.5);
 }
 
