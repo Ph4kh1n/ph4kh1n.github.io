@@ -71,7 +71,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(-80deg, #ffffff, #ff5cab);
+    background-image: linear-gradient(-80deg, #ffcbe4, #ff5cab);
     background-size: 400% 400%;
     animation: gradient 10s ease infinite;
     color: #ffffff;
@@ -98,7 +98,7 @@ body {
 .logo {
     font-size: 25px;
     text-transform: uppercase;
-    cursor: pointer;
+    cursor: none;
 
     background: linear-gradient(-80deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
     background: -webkit-linear-gradient(-80deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
@@ -170,6 +170,7 @@ body {
 .text {
     position: relative;
     z-index: 10;
+    cursor: none;
 }
 
 .text h3 {
@@ -178,8 +179,8 @@ body {
     line-height: 1em;
     text-transform: uppercase;
 
-    background: linear-gradient(-80deg, #fff, #fff, #ff5cab, #ff5cab);
-    background: -webkit-linear-gradient(-80deg, #fff, #fff, #ff5cab, #ff5cab);
+    background: linear-gradient(-80deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
+    background: -webkit-linear-gradient(-80deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -254,8 +255,8 @@ body {
 }
 
 .menu ul li a:hover {
-    background: linear-gradient(180deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
-    background: -webkit-linear-gradient(180deg, #ffffff, #ffffff, #ff5cab, #ff5cab);
+    background: linear-gradient(180deg, #ffcbe4, #ffcbe4, #ff5cab, #ff5cab);
+    background: -webkit-linear-gradient(180deg, #ffcbe4, #ffcbe4, #ff5cab, #ff5cab);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
