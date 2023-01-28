@@ -1,81 +1,103 @@
 <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-        -Property
-    -->
-    <meta property="og:image" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-    <!--
-        -Title
-    -->
-    <title>ไม่รู้ชื่อ ค่อยตั้ง</title>
-    <!--
-        -Links
-    -->
-    <link rel="stylesheet" href="/assets/css/discord.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!--
-        -Fonts
-    -->
-    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
-    <!--
-        -Icon
-    -->
-    <link rel="icon" href="/assets/sources/discord.png">
-</head>
-<body>
-    
-    <div class="overlay"></div>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="navbar container">
-        <a href="#" class="logo">ไม่รู้ชื่อ ค่อยตั้ง</a>
-        <input type="checkbox" id="toggler" />
-        <label for="toggler"><i class="ri-menu-line"></i></label>
-        <div class="menu">
-            <ul class="list">
-                <li><a href="/">Profile</a></li>
-            </ul>
-        </div>
-    </div>
+        <!--=============== SHORTCUT ICON ===============-->
+        <link rel="shortcut icon" href="/assets/img/discord.png" type="image">
 
-    <section class="main">
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-        <div class="text">
-            <h3>M.4/2's Website.</h3>
-            <p>Click down below to join us.</p>
-        </div>
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="/assets/css/styles.css">
 
-        <div class="button">
-            <form action="//discord.gg/8wbK9amJFs" target="_blank">
-            <button class="btn btn-primary">Join Discord</button></form>
-        </div>
+        <title>M.4/2</title>
+    </head>
+    <body>
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
 
-        <ul class="social">
-            <li><a href="//www.facebook.com/phakhin.nongthong.13" target="_blank">
-                <img src="/assets/sources/facebook.png" alt=""></a></li>
-            <li><a href="//github.com/Ph4kh1n" target="_blank">
-                <img src="/assets/sources/github.png" alt=""></a></li>
-            <li><a href="//www.instagram.com/situbsong_65/" target="_blank">
-                <img src="/assets/sources/instagram.png" alt=""></a></li>
-        </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+                
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <!-- Change your profile picture -->
+                        <!--<img src="/assets/img/perfil.png" alt="" class="nav__img"> -->
+                    </div>
 
-    </section>
+                    <span class="nav__greeting">Hi, We're</span>
+                    <h1 class="nav__name">M.4/2</h1>
+                </div>
 
-
-    <section class="footer">
-
-            <div class="text">
-
-                    <p>&copy; 2022-2023 Ph4kh1n && M.4/2</p>
-
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home' ></i> Home 
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class='bx bx-user'></i> About
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i> Exit
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </nav>
 
-    </section>
+        <!--=============== MAIN ===============-->
+        <main class="main" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        M.4/2
+                    </a>
+    
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
 
-</body>
+
+            <!-- When inserting your content into sections, remove the section__height class -->
+            <!--=============== HOME ===============-->
+            <section class="section section__height container" id="home">
+                <h1>HOME</h1>
+                
+            </section>
+
+            <!--=============== ABOUT ===============-->
+            <section class="section section__height container" id="about">
+                <h1>ABOUT</h1>
+                
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section class="section section__height container" id="contact">
+                <h1>CONTACT</h1>
+
+            </section>
+        </main>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="/assets/js/main.js"></script>
+    </body>
 </html>
