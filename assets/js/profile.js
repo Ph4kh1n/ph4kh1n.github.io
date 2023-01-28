@@ -66,35 +66,3 @@ sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filter`, {delay: 1000})
 
 /*=============== LIKE BUTTON ===============*/
-var likeButton = document.getElementById("like-button");
-var likeCount = document.getElementById("like-count");
-
-// check if there is a stored like count in localStorage
-if (localStorage.getItem("likeCount")) {
-  likeCount.innerHTML = localStorage.getItem("likeCount");
-} else {
-  // set the initial like count to 0
-  localStorage.setItem("likeCount", 0);
-  likeCount.innerHTML = 0;
-}
-
-// check if the button has been clicked before
-if (localStorage.getItem("clicked") === "true") {
-  likeButton.innerHTML = '<i class="ri-thumb-up-fill"></i>';
-}
-
-likeButton.addEventListener("click", function() {
-  var count = parseInt(localStorage.getItem("likeCount"));
-  // check the button text and toggle the count accordingly
-  if (likeButton.innerHTML === '<i class="ri-thumb-up-line"></i>') {
-    count++;
-    localStorage.setItem("clicked", "true");
-    likeButton.innerHTML = '<i class="ri-thumb-up-fill"></i>';
-  } else {
-    count--;
-    localStorage.setItem("clicked", "false");
-    likeButton.innerHTML = '<i class="ri-thumb-up-line"></i>';
-  }
-  localStorage.setItem("likeCount", count);
-  likeCount.innerHTML = count;
-});
