@@ -18,6 +18,9 @@
     <body>
         <!--=============== HEADER PROFILE ===============-->
         <header class="profile container">
+            <!-- Theme Button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
             <div class="profile__container grid">
                 <div class="profile__data">
                     <div class="profile__border">
@@ -27,7 +30,7 @@
                     </div>
 
                     <h2 class="profile__name">Phakhin Nongthong</h2>
-                    <h3 class="proflie__profession">Web developer</h3>
+                    <h3 class="profile__profession">Web developer</h3>
 
                     <ul class="profile__social">
                         <a href="//facebook.com/phakhin.nongthong.10" target="_blank" class="profile__social-link">
@@ -52,19 +55,19 @@
                         <p class="profile__info-description">Complete of <br> projects</p>
                     </div>
                     <div class="profile__info-group">
-                        <h3 class="profile__info-number">0</h3>
+                        <h3 class="profile__info-number" id="count">0</h3>
                         <p class="profile__info-description">Total <br> likes</p>
                     </div>
                 </div>
 
                 <div class="profile__buttons">
-                    <a href="" class="button"> <!-- download="" -->
-                        Download CV <i class="ri-download-line"></i>
+                    <a href="discord/" class="button">
+                        Discord <i class="ri-discord-line"></i>
                     </a>
 
                     <div class="profile__buttons-small">
-                        <a href="discord/" class="button button__small button__gray">
-                            <i class="ri-discord-line"></i>
+                        <a class="button button__small button__gray" id="likebtn">
+                            <i class="ri-thumb-up-line"></i>
                         </a>
 
                         <a href="//m.me/phakhin.nongthong.10" target="_blank" class="button button__small button__gray">
@@ -77,9 +80,9 @@
         </header>
 
         <!--=============== MAIN ===============-->
-            <!--<main class="main">
+            <main class="main">
             <section class="filters container">
-                =============== FILTERS TABS ===============
+                <!--=============== FILTERS TABS ===============-->
                 <ul class="filters__content">
                     <button class="filters__button" data-target="#projects">
                         Projects
@@ -91,7 +94,7 @@
                 </ul>
 
                 <div class="filters__sections">
-                    =============== PROJECTS ===============
+                    <!--=============== PROJECTS ===============-->
                     <div class="projects__content grid" data-content id="projects">
                         <article class="projects__card">
                                 <img src="assets/img/project4.jpg" alt="" class="projects__img">
@@ -100,7 +103,7 @@
                                     <div>
                                         <span class="projects__subtitle">Web</span>
                                         <h3 class="projects__title">My profile website</h3>
-                                        <a href="" class="projects__button button button__small">
+                                        <a href="/" class="projects__button button button__small">
                                             <i class="ri-link"></i>
                                         </a>
                                     </div>
@@ -114,32 +117,141 @@
                                 <div>
                                     <span class="projects__subtitle">Web</span>
                                     <h3 class="projects__title">Room's discord</h3>
-                                    <a href="" class="projects__button button button__small">
+                                    <a href="/discord/" class="projects__button button button__small">
                                         <i class="ri-link"></i>
                                     </a>
                                 </div>
                             </div>
-                    </article>
+                        </article>
                     </div>
 
-                    =============== SKILLS ===============
+                    <!--=============== SKILLS ===============-->
                     <div class="skills__content grid" data-content id="skills">
-                        
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Frontend developer
+                            </h3>
+
+                            <div class="skills__box">
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">HTML</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">CSS</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">JavaScript</h3>
+                                            <span class="skills__level">Intermediate</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-close-circle-line none"></i>
+                                        <div>
+                                            <h3 class="skills__name">React</h3>
+                                            <span class="skills__level">None</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-close-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Bootstrap</h3>
+                                            <span class="skills__level">None</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Git</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">
+                                Backend developer
+                            </h3>
+
+                            <div class="skills__box">
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">PHP</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-close-circle-line none"></i>
+                                        <div>
+                                            <h3 class="skills__name">MySQL</h3>
+                                            <span class="skills__level">None</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-close-circle-line none"></i>
+                                        <div>
+                                            <h3 class="skills__name">Firebase</h3>
+                                            <span class="skills__level">None</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+                                        <div>
+                                            <h3 class="skills__name">Node Js</h3>
+                                            <span class="skills__level">Basic</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
                 </div>
             </section>
-        </main> -->
+        </main>
 
         <!--=============== FOOTER ===============-->
         <footer class="footer container">
-            
+            <span class="footer__copy">
+                &#169; Ph4kh1n. All right reserved.
+            </span>
         </footer>
 
         <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+        <script src="assets/js/scrollreveal.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
-        <script src=""></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
