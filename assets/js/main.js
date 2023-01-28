@@ -66,17 +66,3 @@ sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filter`, {delay: 1000})
 
 /*=============== LIKE BUTTON ===============*/
-let count = 0
-const likeButton = document.getElementById("likebtn")
-const likeCount = document.getElementById("count")
-
-likeButton.addEventListener("click", function() {
-    if (likeButton.innerHTML === '<i class="ri-thumb-up-fill"></i>') {
-      count--;
-      likeButton.innerHTML = '<i class="ri-thumb-up-line"></i>';
-    } else {
-      count++;
-      likeButton.innerHTML = '<i class="ri-thumb-up-fill"></i>';
-    }
-    likeCount.innerHTML = count;
-  });
