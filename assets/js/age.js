@@ -3,9 +3,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const ageText = document.getElementById("ageText");
 
-    const currentDate = newDate();
-    if (currentDate.getMonth() == 2 && currentDate.getDate() == 5) {
-        currentAge++;
+    function incrementAge() {
+        const currentDate = new Date();
+        if (currentDate.getMonth() === 2 && currentDate.getDate() === 5) {
+            currentAge++;
+            //ageText.textContent = currentAge;
+        }
         ageText.textContent = currentAge;
     }
-})
+
+    setInterval(incrementAge, 1000);
+});
