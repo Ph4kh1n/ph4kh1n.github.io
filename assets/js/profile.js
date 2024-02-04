@@ -65,4 +65,11 @@ sr.reveal(`.profile__buttons`, {delay: 800})
 sr.reveal(`.filters__content`, {delay: 900})
 sr.reveal(`.filter`, {delay: 1000})
 
-/*=============== LIKE BUTTON ===============*/
+/*=============== COMPLETE PROJECTS COUNTER ===============*/
+document.addEventListener('DOMContentLoaded', function() {
+    const projectCards = document.querySelectorAll('article.projects__card');
+
+    const number = projectCards.length;
+
+    document.querySelector('#comText').textContent = `${number}`;
+});

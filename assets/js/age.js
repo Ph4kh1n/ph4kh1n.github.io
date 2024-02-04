@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const currentDate = new Date();
         if (currentDate.getMonth() === 2 && currentDate.getDate() === 5) {
             currentAge++;
-            //ageText.textContent = currentAge;
         }
         ageText.textContent = currentAge;
     }
