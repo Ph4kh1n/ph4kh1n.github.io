@@ -1,15 +1,20 @@
 document.addEventListener("DOMContentLoaded", function() {
     let currentAge = 17;
 
-    const ageText = document.getElementById("ageText");
-
-    function incrementAge() {
-        const currentDate = new Date();
-        if (currentDate.getMonth() === 2 && currentDate.getDate() === 5) {
-            currentAge++;
-        }
-        ageText.textContent = currentAge;
+    function isOct13() {
+        let currentDate = new Date();
+        return currentDate.getMonth() === 2 && currentDate.getDay() === 6;
     }
 
-    setInterval(incrementAge, 1000);
+    /*function incrementAge() {
+        currentAge++;
+    }*/
+
+    setInterval(function() {
+        if (isOct13()) {
+            //incrementAge();
+            currentAge++;
+        }
+        document.getElementById("ageText").innerText = currentAge;
+    }, 1000);
 });
