@@ -73,3 +73,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelector('#comText').textContent = `${number}`;
 });
+
+/*=============== inCOMPLETE AGE COUNTER ===============*/
+document.addEventListener("DOMContentLoaded", function() {
+    let currentAge = 17;
+
+    var Months = ["January", "Febuary", "March", "April", "May",
+        "June", "July", "August", "September", "October", "November",
+        "December"];
+
+    var Days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
+        "Friday", "Saturnday"];
+
+    var myDate = new Date(),
+        year = myDate.getFullYear(),
+        month = myDate.getMonth(),
+        date = myDate.getDate(),
+        day = myDate.getDay(),
+        hour = myDate.getHours(),
+        minutes = myDate.getMinutes(),
+        seconds = myDate.getSeconds();
+
+    if(date == 26 && month == 1) {
+        currentAge++;
+        
+        console.log("%d %s %s %d %d:%d:%d", date, Days[day],
+                Months[month],year, hour, minutes, seconds);
+    }
+    document.getElementById("ageText").innerText = currentAge;
+});
