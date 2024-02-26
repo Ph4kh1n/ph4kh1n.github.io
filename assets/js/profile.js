@@ -76,7 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 /*=============== inCOMPLETE AGE COUNTER ===============*/
 document.addEventListener("DOMContentLoaded", function() {
-    let currentAge = 17;
+    let defAge = 17;
+    let startAge = defAge;
+    let currentAge = startAge;
 
     var Months = ["January", "Febuary", "March", "April", "May",
         "June", "July", "August", "September", "October", "November",
@@ -94,11 +96,11 @@ document.addEventListener("DOMContentLoaded", function() {
         minutes = myDate.getMinutes(),
         seconds = myDate.getSeconds();
 
-    if(date == 26 && month == 1) {
-        currentAge++;
+    if(date == 13 && month == 9) {
+        startAge++;
         
         console.log("%d %s %s %d %d:%d:%d", date, Days[day],
                 Months[month],year, hour, minutes, seconds);
     }
-    document.getElementById("ageText").innerText = currentAge;
+    document.getElementById("ageText").innerText = startAge;
 });
